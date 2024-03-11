@@ -28,7 +28,7 @@ public class StudentController {
         studentService.deleteStudent(studentId);
     }
 
-    @PutMapping(path = "{studentId")
+    @PutMapping(path = "{studentId}")
     public void updateStudent(@PathVariable("studentId") Long studentId,
                               @PathVariable(required = false) String name,
                               @PathVariable(required = false) String email){
